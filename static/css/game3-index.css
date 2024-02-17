@@ -1,0 +1,90 @@
+.medical-label {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    margin: 0 !important;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border-radius: 0 0 var(--br-6xl) 0;
+    background-color: var(--color-dodgerblue-600);
+    box-shadow: 0 4px 40px -10px rgba(0, 0, 0, 0.15);
+  }
+  .object-icon39 {
+    height: 29.5px;
+    width: 33.9px;
+    object-fit: cover;
+    min-height: 30px;
+  }
+  .medicust36,
+  .object-icon39 {
+    position: relative;
+    z-index: 1;
+  }
+  .medical-label-parent {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: var(--padding-base) var(--padding-18xl) var(--padding-mini)
+      var(--padding-17xl);
+    position: relative;
+    gap: var(--gap-9xs);
+  }
+  .inner-frames-child {
+    position: absolute;
+    height: 100%;
+    top: 0;
+    bottom: 0;
+    left: 777px;
+    border-radius: 0 0 0 var(--br-3xs);
+    max-height: 100%;
+    width: 466px;
+    overflow: hidden;
+    z-index: 1;
+  }
+  .inner-frames-item {
+    position: absolute;
+    top: 192px;
+    left: 0;
+    border-radius: var(--br-3xs);
+    background-color: var(--color-white);
+    box-shadow: var(--dropdown);
+    width: 1045px;
+    height: 848px;
+    overflow: hidden;
+    z-index: 2;
+  }
+  .inner-frames {
+    height: 1233px;
+    flex: 1;
+    position: relative;
+    min-width: 808px;
+    margin-left: -71px;
+  }
+  .depression-detection1,
+  .desktop-54 {
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+  }
+  .desktop-54 {
+    flex: 1;
+    background-color: var(--color-aliceblue);
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+    text-align: left;
+    font-size: var(--font-size-6xl);
+    color: var(--color-white);
+    font-family: var(--font-ubuntu);
+  }
+  .depression-detection1 {
+    width: 100%;
+    position: relative;
+    background-color: var(--color-white);
+    align-items: center;
+    justify-content: center;
+  }
+  

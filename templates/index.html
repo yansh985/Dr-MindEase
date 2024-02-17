@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pairing Game</title>
+
+    <!-- CSS Styling -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/game2style.css') }}">
+</head>
+
+<body onload='init()'>
+    
+<!-- <img src="./images/bgimg.jpg" id="bg" alt=""> -->
+    <main>
+        <header class="hide">
+            <h1>Chance Left <br>
+                <span>
+                    <span class="chance">30 </span>out of 30
+                </span>
+            </h1>
+        </header>
+        <div class="playAgain hide">
+            <h1>Play Again</h1>
+            <button class="start">Start</button>
+        </div>
+        <div class="level">
+            <h1>Choose Level to Start</h1>
+            <button class="easy">Easy</button>
+            <button class="hard">Hard</button>
+        </div>
+        <section class="cards hide">
+            <div class="card">
+                <div class="question flip ">
+                    <img src="{{ url_for('static', filename='img/que_icon.svg') }}" alt="">
+                </div>
+                <div class=" gem ">
+                    <img src="{{ url_for('static', filename='img/img1.png') }}" alt="">
+
+                </div>
+            </div>
+            <div class="card">
+                <div class="question flip">
+                    <img src="{{ url_for('static', filename='img/que_icon.svg') }}"alt="">
+                </div>
+                <div class="gem">
+                    <img src="{{ url_for('static', filename='img/img2.png') }}" alt="">
+
+                </div>
+            </div>
+            <div class="card">
+                <div class="question flip">
+                    <img src="{{ url_for('static', filename='img/que_icon.svg') }}" alt="">
+                </div>
+                <div class="gem">
+                    <img src="{{ url_for('static', filename='img/img3.png') }}" alt="">
+
+                </div>
+            </div>
+            <div class="card">
+                <div class="question flip">
+                    <img src="{{ url_for('static', filename='img/que_icon.svg') }}"alt="">
+                </div>
+                <div class="gem">
+                    <img src="{{ url_for('static', filename='img/img4.png') }}" alt="">
+
+                </div>
+            </div>
+            <div class="card">
+                <div class="question flip">
+                    <img src="{{ url_for('static', filename='img/que_icon.svg') }}"alt="">
+                </div>
+                <div class="gem">
+                    <img src="{{ url_for('static', filename='img/img5.png') }}" alt="">
+
+                </div>
+            </div>
+            <div class="card">
+                <div class="question flip">
+                    <img src="{{ url_for('static', filename='img/que_icon.svg') }}"alt="">
+                </div>
+                <div class="gem">
+                    <img src="{{ url_for('static', filename='img/img6.png') }}" alt="">
+                </div>
+            </div>
+            <div class="card">
+                <div class="question flip">
+                    <img src="{{ url_for('static', filename='img/que_icon.svg') }}" alt="">
+                </div>
+                <div class="gem">
+                    <img src="{{ url_for('static', filename='img/img7.png') }}" alt="">
+                </div>
+            </div>
+            <div class="card">
+                <div class="question flip">
+                    <img src="{{ url_for('static', filename='img/que_icon.svg') }}" alt="">
+                </div>
+                <div class="gem">
+                    <img src="{{ url_for('static', filename='img/img8.png') }}" alt="">
+                </div>
+            </div>
+            <div class="card">
+                <div class="question flip">
+                    <img src="{{ url_for('static', filename='img/que_icon.svg') }}" alt="">
+                </div>
+                <div class="gem">
+                    <img src="{{ url_for('static', filename='img/img1.png') }}" alt="">
+                </div>
+            </div>
+            <div class="card">
+                <div class="question flip">
+                    <img src="{{ url_for('static', filename='img/que_icon.svg') }}"alt="">
+                </div>
+                <div class="gem">
+                    <img src="{{ url_for('static', filename='img/img2.png') }}" alt="">
+                </div>
+            </div>
+            <div class="card">
+                <div class="question flip">
+                    <img src="{{ url_for('static', filename='img/que_icon.svg') }}"alt="">
+                </div>
+                <div class="gem">
+                    <img src="{{ url_for('static', filename='img/img3.png') }}" alt="">
+                </div>
+            </div>
+            <div class="card">
+                <div class="question flip">
+                    <img src="{{ url_for('static', filename='img/que_icon.svg') }}"alt="">
+                </div>
+                <div class="gem">
+                    <img src="{{ url_for('static', filename='img/img4.png') }}" alt="">
+                </div>
+            </div>
+            <div class="card">
+                <div class="question flip">
+                    <img src="{{ url_for('static', filename='img/que_icon.svg') }}"" alt="">
+                </div>
+                <div class="gem">
+                    <img src="{{ url_for('static', filename='img/img5.png') }}" alt="">
+                </div>
+            </div>
+            <div class="card">
+                <div class="question flip">
+                    <img src="{{ url_for('static', filename='img/que_icon.svg') }}" alt="">
+                </div>
+                <div class="gem">
+                    <img src="{{ url_for('static', filename='img/img6.png') }}"alt="">
+                </div>
+            </div>
+            <div class="card">
+                <div class="question flip">
+                    <img src="{{ url_for('static', filename='img/que_icon.svg') }}" alt="">
+                </div>
+                <div class="gem">
+                    <img src="{{ url_for('static', filename='img/img7.png') }}" alt="">
+                </div>
+            </div>
+            <div class="card">
+                <div class="question flip">
+                    <img src="{{ url_for('static', filename='img/que_icon.svg') }}" alt="">
+                </div>
+                <div class="gem">
+                    <img src="{{ url_for('static', filename='img/img8.png') }}" alt="">
+                </div>
+            </div>
+            <div class="info">
+                <h1>Match the Images</h1>
+            </div>
+        </section>
+    </main>
+
+
+
+    <script src= "{{ url_for('static', filename='js/script.js') }}"defer></script>
+</body>
+
+</html>

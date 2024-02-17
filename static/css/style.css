@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+html {
+    --s: 100px; /* control the size */
+    --c1: #C3CCAF;
+    --c2: #67434F;
+    
+    --_s: calc(2*var(--s)) calc(2*var(--s));
+    --_g: var(--_s) conic-gradient(at 40% 40%,#0000 75%,var(--c1) 0);
+    --_p: var(--_s) conic-gradient(at 20% 20%,#0000 75%,var(--c2) 0);
+    background:
+      calc( .9*var(--s)) calc( .9*var(--s))/var(--_p),
+      calc(-.1*var(--s)) calc(-.1*var(--s))/var(--_p),
+      calc( .7*var(--s)) calc( .7*var(--s))/var(--_g),
+      calc(-.3*var(--s)) calc(-.3*var(--s))/var(--_g),
+      conic-gradient(from 90deg at 20% 20%,var(--c2) 25%,var(--c1) 0) 
+       0 0/var(--s) var(--s);
+    animation: m 3s infinite;
+  }
+  @keyframes m {
+    0% {
+     background-position: 
+      calc( .9*var(--s)) calc( .9*var(--s)),
+      calc(-.1*var(--s)) calc(-.1*var(--s)),
+      calc( .7*var(--s)) calc( .7*var(--s)),
+      calc(-.3*var(--s)) calc(-.3*var(--s)),0 0
+    }
+    25% {
+     background-position: 
+      calc(1.9*var(--s)) calc( .9*var(--s)),
+      calc(-1.1*var(--s)) calc(-.1*var(--s)),
+      calc(1.7*var(--s)) calc( .7*var(--s)),
+      calc(-1.3*var(--s)) calc(-.3*var(--s)),0 0
+    }
+    50% {
+     background-position: 
+      calc(1.9*var(--s)) calc(-.1*var(--s)),
+      calc(-1.1*var(--s)) calc( .9*var(--s)),
+      calc(1.7*var(--s)) calc(-.3*var(--s)),
+      calc(-1.3*var(--s)) calc( .7*var(--s)),0 0
+    }
+    75% {
+     background-position: 
+      calc(2.9*var(--s)) calc(-.1*var(--s)),
+      calc(-2.1*var(--s)) calc( .9*var(--s)),
+      calc(2.7*var(--s)) calc(-.3*var(--s)),
+      calc(-2.3*var(--s)) calc( .7*var(--s)),0 0
+    }
+    100% {
+     background-position: 
+      calc(2.9*var(--s)) calc(-1.1*var(--s)),
+      calc(-2.1*var(--s)) calc(1.9*var(--s)),
+      calc(2.7*var(--s)) calc(-1.3*var(--s)),
+      calc(-2.3*var(--s)) calc(1.7*var(--s)),0 0
+    }
+  }
+body {
+    width: 100vw;
+    height: 100vh;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+#bg {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+}
+
+main {
+    background-color: tomato;
+    width: 400px;
+    text-align: center;
+    z-index: 1;
+}
+
+main header {
+    width: 100%;
+    border-bottom: 2px solid #fff;
+    padding: 10px;
+    color: #fff;
+}
+
+main header h1 {
+    font-weight: 500;
+    line-height: 1;
+}
+
+main header h1 span {
+    font-size: 18px;
+}
+
+main .playAgain {
+    padding: 10px;
+    color: #fff;
+}
+
+main .playAgain h1 {
+    font-weight: 500;
+    font-size: 22px;
+    margin: 20px 0;
+}
+
+main .playAgain button {
+    font-size: 18px;
+    width: 150px;
+    padding: 8px;
+    color: #fff;
+    background-color: transparent;
+    border: 2px solid #fff;
+    cursor: pointer;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+main .playAgain button:hover {
+    background-color: #fff;
+    color: tomato;
+}
+
+
+main .level {
+    padding: 10px;
+    color: #fff;
+}
+
+main .level h1 {
+    font-weight: 500;
+    font-size: 22px;
+    margin: 20px 0;
+}
+
+main .level button {
+    font-size: 18px;
+    width: 150px;
+    padding: 8px;
+    color: #fff;
+    background-color: transparent;
+    border: 2px solid #fff;
+    cursor: pointer;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+main .level button:hover {
+    background-color: #fff;
+    color: tomato;
+}
+
+.hide {
+    display: none;
+}
+
+main .level.hide {
+    display: none;
+}
+
+main .cards.hide {
+    display: none;
+}
+
+main .cards {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+main .cards .card {
+    width: calc((100%/4) - 20px);
+    cursor: pointer;
+    margin: 10px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: #ff0000 2px 2px 20px, #ff0000 -2px -2px 20px;
+    pointer-events: none;
+}
+
+main .cards .card img {
+    pointer-events: auto;
+    height: 100%;
+    display: flex;
+}
+
+main .cards .card .question {
+    display: none;
+    transition: transform 0.9s linear;
+
+}
+
+main .cards .card .gem {
+    display: none;
+    transition: transform 0.9s linear;
+
+}
+
+main .cards .card img {
+    width: 100%;
+    height: 100%;
+}
+
+main .cards .card .question.flip {
+    transform: rotateY(0deg);
+    display: block;
+    height: 70px;
+    padding: 5px;
+    border-radius: 10px;
+    transition: transform 0.9s linear;
+
+}
+
+main .cards .card .gem.flip {
+    transform: rotateY(180deg);
+    display: block;
+    height: 70px;
+    padding: 5px;
+    border-radius: 10px;
+    transition: transform 0.9s linear;
+
+}
+
+
+
+main .cards .card .gem.shake {
+    animation: shake 0.35s ease-in-out;
+}
+
+@keyframes shake {
+    0%, 100% {
+        transform: translateX(0);
+    }
+
+    20% {
+        transform: translateX(-13px);
+    }
+
+    40% {
+        transform: translateX(13px);
+    }
+
+    60% {
+        transform: translateX(-8px);
+    }
+
+    80% {
+        transform: translateX(8px);
+    }
+}
+
+main .cards .info {
+    border-top: 2px solid #fff;
+    padding: 20px;
+    width: 100%;
+    color: #fff;
+}
+
+main .cards .info h1 {
+    font-weight: 500;
+    line-height: 1;
+}

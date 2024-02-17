@@ -1,0 +1,50 @@
+<!-- index.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Word Guessing Game</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/game3-global.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/game3-index.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/game3style.css') }}" />
+    <script src="{{ url_for('static', filename='js/game3js.js') }}"></script>
+</head>
+<!-- Main div -->
+
+<body>
+    <nav>
+        <div class="medical-label-parent">
+            <div class="medical-label"></div>
+            <img class="object-icon39" loading="eager" alt="" src="{{ url_for('static', filename='img/Logo.png') }}" />
+            <b class="medicust36">Dr. Med-Ease</b>
+        </div>
+        <button class="text-frame-e">Back</button>
+    </nav>
+    <div class="bg"></div>
+<div class="bg bg2"></div>
+<div class="bg bg3"></div>
+<!-- <div class="content"> -->
+    <div class="card">
+        <h1>Guess the word</h1>
+        <p>
+            <b>Hint:</b> <span id="hint"></span>
+        </p>
+        <p id="displayWord"></p>
+        <p>Guess one letter:
+            <input type="text" maxlength="1" id="letter-input" class="input">
+        </p>
+        <button onclick="guessLetter()" class="submit">
+            Submit
+        </button>
+        <button onclick="nextQuestion()" class="next">
+            Next Question
+        </button>
+    </div>
+  <!-- <h1>Sliding Diagonals Background Effect</h1> -->
+
+   
+    
+</body>
+
+</html>

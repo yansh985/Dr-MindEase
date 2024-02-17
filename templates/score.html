@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/scoere-global.css') }}" />
+    <link rel="stylesheet" href= "{{ url_for('static', filename='css/Score-Detection.css') }}" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IcoFont:wght@400&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lalezar:wght@400&display=swap" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Open Sans:wght@400;600;700;800&display=swap" />
+</head>
+
+<body>
+    <div class="score-detection">
+        <form class="main-frame4">
+            <header class="rectangle-shape-parent">
+                <div class="rectangle-shape1"></div>
+                <img class="object-icon37" loading="eager" alt="" src="{{ url_for('static', filename='img/whitelogo.png') }}" />
+
+                <div class="text-frame6">
+                    <h2 class="medicust34">Dr. Mind-Ease</h2>
+                </div>
+            </header>
+            <div class="weekly-interaction-frame">
+                <div class="get-your-score-frame">
+                    <div class="how-often-bot-frame">
+                        <h1 class="get-your-mental1">Get your Mental Health score</h1>
+                    </div>
+                    <div class="frame-parent68">
+                        <div class="over-the-last-2-weeks-how-oft-parent">
+                            <div class="over-the-last">
+                                Over the last 2 weeks, how often have you been bothered by
+                                little interest or pleasure in doing things?
+                            </div>
+                            <label for="answer1">Select an option:</label>
+                            <select id="answer1" name="answer1">
+                                <option value="0">Not at all</option>
+                                <option value="1">Several days</option>
+                                <option value="2">More than half the days</option>
+                                <option value="3">Nearly every day</option>
+                                    
+                            </select>
+                            <!-- <div class="vectors">
+                                <div class="select">Select....</div>
+                                
+                            </div> -->
+                        </div>
+                        <div class="over-the-last-2-weeks-how-oft-group">
+                            <div class="over-the-last1">
+                                Over the last 2 weeks, how often have you been bothered by
+                                feeling down, depressed, or hopeless?
+                            </div>
+                            <label for="answer2">Select an option:</label>
+                            <select id="answer2" name="answer2">
+                                <option value="0">Not at all</option>
+                                <option value="1">Several days</option>
+                                <option value="2">More than half the days</option>
+                                <option value="3">Nearly every day</option>
+                                    
+                            </select>
+                        </div>
+                        <div class="over-the-last-2-weeks-how-oft-container">
+                            <div class="over-the-last2">
+                                Over the last 2 weeks, how often have you been bothered by
+                                trouble falling or staying asleep, or sleeping too much?
+                            </div>
+                            <label for="answer3">Select an option:</label>
+                            <select id="answer3" name="answer3">
+                                <option value="0">Not at all</option>
+                                <option value="1">Several days</option>
+                                <option value="2">More than half the days</option>
+                                <option value="3">Nearly every day</option>
+                                    
+                            </select>
+                        </div>
+                        <div class="result-frame">
+                            <div class="mental-health-message-frame">
+                                <div class="over-the-last3">
+                                    Over the last 2 weeks, how often have you been bothered by
+                                    feeling tired or having little energy?
+                                </div>
+                            </div>
+                            <label for="answer4">Select an option:</label>
+                            <select id="answer4" name="answer4">
+                                <option value="0">Not at all</option>
+                                <option value="1">Several days</option>
+                                <option value="2">More than half the days</option>
+                                <option value="3">Nearly every day</option>
+                                    
+                            </select>
+                        </div>
+                        <div class="over-the-last-2-weeks-how-oft-parent1">
+                            <div class="over-the-last4">
+                                Over the last 2 weeks, how often have you been bothered by
+                                poor appetite or overeating?
+                            </div>
+                            <label for="answer5">Select an option:</label>
+                            <select id="answer5" name="answer5">
+                                <option value="0">Not at all</option>
+                                <option value="1">Several days</option>
+                                <option value="2">More than half the days</option>
+                                <option value="3">Nearly every day</option>
+                                    
+                            </select>
+                        </div>
+                        <div class="over-the-last-2-weeks-how-oft-parent2">
+                            <div class="over-the-last5">
+                                Over the last 2 weeks, how often have you been bothered by
+                                feeling bad about yourself or that you are a failure or have
+                                let yourself or your family down?
+                            </div>
+                            <label for="answer6">Select an option:</label>
+                            <select id="answer6" name="answer6">
+                                <option value="0">Not at all</option>
+                                <option value="1">Several days</option>
+                                <option value="2">More than half the days</option>
+                                <option value="3">Nearly every day</option>
+                                    
+                            </select>
+                        </div>
+                        <div class="over-the-last-2-weeks-how-oft-parent3">
+                            <div class="over-the-last6">
+                                Over the last 2 weeks, how often have you been bothered by
+                                trouble concentrating on things, such as reading the newspaper9
+                                or watching television?
+                            </div>
+                            <label for="answer7">Select an option:</label>
+                            <select id="answer7" name="answer7">
+                                <option value="0">Not at all</option>
+                                <option value="1">Several days</option>
+                                <option value="2">More than half the days</option>
+                                <option value="3">Nearly every day</option>
+                                    
+                            </select>
+                        </div>
+                        <div class="over-the-last-2-weeks-how-oft-parent4">
+                            <div class="over-the-last7">
+                                Over the last 2 weeks, how often have you been bothered by
+                                moving or speaking so slowly that other people could have
+                                noticed, or the opposite, being so fidgety or restless that
+                                you have been moving around a lot more than usual?
+                            </div>
+                            <label for="answer8">Select an option:</label>
+                            <select id="answer8" name="answer8">
+                                <option value="0">Not at all</option>
+                                <option value="1">Several days</option>
+                                <option value="2">More than half the days</option>
+                                <option value="3">Nearly every day</option>
+                                    
+                            </select>
+                        </div>
+                        <div class="over-the-last-2-weeks-how-oft-parent5">
+                            <div class="over-the-last8">
+                                Over the last 2 weeks, how often have you been bothered by
+                                thoughts that you would be better off dead or of hurting
+                                yourself?
+                            </div>
+                            <label for="answer9">Select an option:</label>
+                            <select id="answer9" name="answer9">
+                                <option value="0">Not at all</option>
+                                <option value="1">Several days</option>
+                                <option value="2">More than half the days</option>
+                                <option value="3">Nearly every day</option>
+                                    
+                            </select>
+                        </div>
+                    </div>
+                    <div class="mental-health-score-frame">
+                        <button class="submit-button5" type="button" onclick="calculatePoints()">
+                            <b class="submit6">Submit</b>
+                        </button>
+                    </div>
+                </div>
+            </div>
+           
+            <div id="result" class="totalScore"></div> <button  id="additionalButton" onclick="handleAdditionalButtonClick()"
+            class="Reccomendation" >
+            Get Reccomendation
+        </button>
+
+        </form>
+
+        <div class="appointment-getter-frame">
+            <div class="cartoon-image">
+                <button class="get-appoinment-wrapper2" onclick="location.href='/'">
+                    <div class="get-appoinment10">Home</div>
+                </button>
+                <div class="cartoon-image-inner">
+                    <div class="oval-parent1">
+                        <div class="oval22"></div>
+                        <div class="oval23"></div>
+                        <div class="oval24"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="pngtree-cartoon-style-3d-illus-frame">
+                <img class="pngtree-cartoon-style-3d-illus-icon6" loading="eager" alt=""
+                    src="{{ url_for('static', filename='img/doctor.png') }}" />
+            </div>
+        </div>
+
+
+
+    </div>
+    <script>
+        function calculatePoints() {
+            var totalPoints = 0;
+
+            // Loop through each question and calculate points
+            for (var i = 1; i <= 8; i++) {
+                var selectedOption = document.getElementById('answer' + i);
+                totalPoints += parseInt(selectedOption.value);
+            }
+
+            // Display the total score in a designated element
+            var resultElement = document.getElementById('result');
+            resultElement.innerHTML = 'Total Score: ' + totalPoints;
+
+            // Show the additional button
+            var additionalButton = document.getElementById('additionalButton');
+            additionalButton.style.display = 'block';
+        }
+
+        function handleAdditionalButtonClick() {
+            // Add functionality for the additional button click here
+            alert('Additional button clicked!');
+        }
+    </script>
+
+</body>
+
+</html>

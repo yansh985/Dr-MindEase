@@ -1,0 +1,155 @@
+/* style.css */
+
+/* Styling for the heading */
+h1 { 
+	/* background-color: rgb(231, 231, 231);  */
+	color: #0088FF; 
+	font-size: xx-large; 
+	padding: 2%; 
+	/* width: 70vh; */
+
+} 
+.text-frame-e{
+    width: 100px;
+    padding: 10px;
+    margin-top: 50px;
+    margin-left: 50px;
+    font-size: larger;
+    padding: 20px;
+    background-color: #0088FF;
+    border: none;
+    border-radius: 10px;
+    font-size: large;
+    font-weight: bold;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); 
+    color: #ffffff;
+    cursor: pointer;
+}
+.text-frame-e:hover{
+    box-shadow: none;
+}
+/* Style for the card and border */
+.card { 
+	min-width: 30%; 
+	width: 50vh; 
+	min-height: 30vh; 
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); 
+	transition: 0.3s; 
+	border-radius: 5px; 
+	/* margin: auto;  */
+	padding: 2%; 
+    margin-left: 500px;
+    margin-top: 60px;
+    /* color: #0088FF; */
+    text-align: center;
+    background-color: #ffffff;
+}
+span{
+    color: black;
+    font-size: larger;
+} 
+.input{
+    border-radius: 5px;
+    border:1px solid #0088FF;
+}
+/* Font and display style for complete body
+body { 
+	display: flex; 
+	text-align: center; 
+	font-family: "Gill Sans", 
+				"Gill Sans MT", 
+				Calibri, "Trebuchet MS", 
+				sans-serif; 
+}  */
+
+/* Adding style for input box */
+input { 
+	width: 30px; 
+	padding: 1%; 
+	font-size: larger; 
+	text-align: center; 
+	margin-left: 2%; 
+} 
+
+/* Adding style for display word*/
+#displayWord { 
+	font-size: xx-large; 
+}
+.medical-label-parent{
+    width: 250px;
+    max-width: 200px;
+}
+.medicust36{
+    color: white;
+    font-size: larger;
+}
+
+
+.submit,.next{
+    padding: 20px;
+    background-color: #E5F3FF;
+    border: none;
+    border-radius: 10px;
+    font-size: large;
+    font-weight: bold;
+    color: #0088FF;
+}
+.submit:hover,.next:hover{
+    background-color: #0088FF;
+    color: white;
+}
+
+html {
+    height:100%;
+  }
+  
+  body {
+    margin:0;
+  }
+  
+  .bg {
+    animation:slide 3s ease-in-out infinite alternate;
+    background-image: linear-gradient(-60deg, #E5F3FF 50%, #09f 50%);
+    bottom:0;
+    left:-50%;
+    opacity:.5;
+    position:fixed;
+    right:-50%;
+    top:0;
+    z-index:-1;
+  }
+
+  .bg2 {
+    animation-direction:alternate-reverse;
+    animation-duration:4s;
+  }
+  
+  .bg3 {
+    animation-duration:5s;
+  }
+  
+  .content {
+    background-color:rgba(255,255,255,.8);
+    border-radius:.25em;
+    box-shadow:0 0 .25em rgba(0,0,0,.25);
+    box-sizing:border-box;
+    left:50%;
+    padding:10vmin;
+    position:fixed;
+    text-align:center;
+    top:50%;
+    transform:translate(-50%, -50%);
+  }
+  
+  h1 {
+    font-family:monospace;
+  }
+  
+  @keyframes slide {
+    0% {
+      transform:translateX(-25%);
+    }
+    100% {
+      transform:translateX(25%);
+    }
+  }
