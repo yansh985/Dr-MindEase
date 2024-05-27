@@ -19,7 +19,7 @@ Dr.Mindease is a healthcare solution designed to provide rapid access to reliabl
 4. Game Development: Created engaging games to help users relieve stress and anxiety.
 5. Mental Health Score Checker: Developed a gamified application for users to assess their mental health.
 
-[Problem statement and ppt.pdf](https://github.com/yansh985/Dr-Mindease/files/15451697/Problem.statement.and.ppt.pdf)
+[Problem statement and working.pdf](https://github.com/yansh985/Dr-Mindease/files/15451697/Problem.statement.and.ppt.pdf)
 
 
 ## Technological Stack
