@@ -1,4 +1,4 @@
-## Dr.Mindease & Mental Health Support
+### Dr.Mindease & Mental Health Support
 
 Dr.Mindease is a healthcare solution designed to provide rapid access to reliable mental health information and support through AI-based chatbots. This project was developed during a hackathon with the goal of enhancing mental health support using technology.
 
@@ -19,8 +19,9 @@ Dr.Mindease is a healthcare solution designed to provide rapid access to reliabl
 4. Game Development: Created engaging games to help users relieve stress and anxiety.
 5. Mental Health Score Checker: Developed a gamified application for users to assess their mental health.
 
-[Problem statement and working.pdf](https://github.com/yansh985/Dr-Mindease/files/15451697/Problem.statement.and.ppt.pdf)
+[Problem statement and ppt.pdf](https://github.com/yansh985/Dr-Mindease/files/15451697/Problem.statement.and.ppt.pdf)
 
+# [Working Demo](https://youtu.be/A_076KxpqeQ?feature=shared)
 
 ## Technological Stack
 - Frontend: HTML, CSS, and JavaScript for creating an intuitive user interface.
@@ -29,7 +30,7 @@ Dr.Mindease is a healthcare solution designed to provide rapid access to reliabl
 - Design: Figma for UI/UX design.
 - Games: Developed using JavaScript and integrated into the web application.
 
-## If you like this project, star this repository.
+# If you like this project, star this repository.
 
 ## Contributing
 Contributions are welcome! If you have any suggestions, bug reports, or feature requests, please feel free to open an issue or submit a pull request.
